@@ -13,9 +13,12 @@ def order_value(): #Not familiar with args & kwargs
             break #don't want our machine to break
         else:
             stock_name.append(ticker)
-            value = float(input("Enter stock price: ")
+            value = float(input("Enter stock price: "))
             stock_prices.append(value)
 order_value()
+for i in stock_name:
+    print(i, end=" ")
+print()
 print(sum(stock_prices))
 
 
