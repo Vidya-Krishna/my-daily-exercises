@@ -1,6 +1,25 @@
 #Calculator(s)
 
 ————————————————————————————————————————————————————————
+#order value calculation
+stock_name = []
+stock_prices = []
+value = 0
+
+def order_value(): #Not familiar with args & kwargs
+    while True:
+        ticker = input("Enter stock ticker symbol / press q to exit: ") #taking input multiple times
+        if ticker.lower() == "q":
+            break #don't want our machine to break
+        else:
+            stock_name.append(ticker)
+            value = float(input("Enter stock price: ")
+            stock_prices.append(value)
+order_value()
+print(sum(stock_prices))
+
+
+————————————————————————————————————————————————————————
 #Compound Interest Calculator
 p = float(input("Enter input > 0: "))
 rate = float(input("Enter rate of interest > 0: "))
