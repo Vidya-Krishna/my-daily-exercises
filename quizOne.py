@@ -1,32 +1,29 @@
 #QUIZ 
-questions = (("Seaweeds are an important source of which of the following?"),
-      ("The ____ is the stem-like part of the leaf that joins the blade to the stem, is known as:"),
-      ("Among the given nutrients, milk is a poor source of which of the following?"),
-      ("Which gas is major contributor to greenhouse effect?"),
-      ("Which word is common in the botanical names of trees like Ashoka, Tamarind or Coral?"))
-options = (("[A] Iron", "[B] Chlorine", "[C] Bromine", "[D] Iodine"),
-           ("A] Vein",  "[B] Petiole",  "[C] Stipules","[D] Midrib"),
-           ("[A] Carbohydrate", "[B] Calcium", "[C] Protein", "[D] Vitamin C"),
-           ("[A] Chloroflurocarbon", "[B] Nitrogen dioxide", "[C] Sulphur dioxide", "[D] Carbon dioxide"),
-           ("[A] Terminalia", "[B] Indica", "[C] Salix", "[D] Acacia"),)
-key = ("d","b","c","d","b")
+ques = (('2. Which type of Programming does Python support?'),
+        ('Is Python case sensitive when dealing with identifiers?'),
+        (' Which of the following is the correct extension of the Python file?'),
+        (' Is Python code compiled or interpreted?'))
+
+ans = (('a) object-oriented programming','b) structured programming','c functional programming','d all of the mentioned'),
+       ('a) no','b) yes','c) machine dependent','d) none'),
+       ('a) .py','b) .ab','c) .pyt','d) .pl'),
+       ('a)  Python code is both compiled and interpreted','b) Python code is neither compiled nor interpreted','c) Python code is only compiled','d) Python code is only interpreted'))
 j_count = 0
-score  = 0
-for i in questions:
-      print()
-      print(i)
-      for j in options[j_count]:
-            print(j)
-      entered_option = input("Choose an answer: ").lower()
-      if entered_option == key[j_count]:
-            print('You nailed it!!!')
-            score += 1
-      else:
-            print('Better luck next question')
-            print(f'correct answer is {key[j_count]}')
-            
-      j_count += 1
-print('Your score is: ', score)
+score = 0
+key = ('d', 'b', 'a', 'a')
+for i in ques:
+    print(i)
+    for j in ans[j_count]:
+        print(j)
+    x = input('Choose an option: ')
+    if x == key[j_count]:
+        print('Currekt!!!')
+        score+=1
+    else: 
+        print("Wurong Answer!!!")
+    j_count += 1
+    print('------------------------------------')
+print('Tots scores is: ', int(score*100/len(key)),'%')
 
 #There are a bunch of things I want to add but those things are breaking this. 
 
