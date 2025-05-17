@@ -10,5 +10,15 @@ def reversed_num():
 reversed_num()
 #this is only working for unsigned int / positive values
 
-#----------------------------------------------------
+#----------------------------------------------------------
+#count number of digits in a number 
+def count_digits():
+  count = 0
+  while n > 0:
+    n = n//10
+    count += 1
+  print(count)
+count_digits()
+#I think i can also add asking user input again until n != 0
+#----------------------------------------------------------
 
