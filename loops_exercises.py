@@ -1,3 +1,21 @@
+
+
+
+#----------------------------------------------------------
+#using random.randint()
+n = int(input('Enter n times you want to get random number; n> 0: ')
+def random_number():
+    n1 = int(input('Enter start range: ')
+    n1 = int(input('Enter end range: ')
+    print(random.randint(n1, n2))
+def multiple_random_numbers():
+    for i in range(n):
+        random_number()
+
+multiple_random_numbers()
+#it broke the for my tets_case_1, tets_case_2, tets_case_3, .........
+#added this to my infinte to do list
+#----------------------------------------------------------
 #nested for loop exercise
 def invalid_input():
     while True:
@@ -10,11 +28,11 @@ def market_knowledge():
          ('NSE established in which year'), 
          ('NSE HQ is at'), 
          ('Which agency regulates stock market of India'))
-    o = (('NSE', 'NYSE', 'BSE', 'NIKKEI', 'NASDAQ'),
-         ('SBI', 'ICICI', 'HFDC', 'AXIS', 'KOTAK'),
-         ('1991', '1992', '1993', '1994', '1995'),
-         ('DELHI', 'BANGALORE', 'HYDERABAD', 'MUMBAI', 'CHENNAI'),
-         ('NABARD', 'RBI', 'ED', 'CCI', 'SEBI'))
+    o = (('NSE',    'NYSE',      'BSE',       'NIKKEI', 'NASDAQ'),
+         ('SBI',    'ICICI',     'HFDC',      'AXIS',   'KOTAK'),
+         ('1991',   '1992',      '1993',      '1994',   '1995'),
+         ('DELHI',  'BANGALORE', 'HYDERABAD', 'MUMBAI', 'CHENNAI'),
+         ('NABARD', 'RBI',       'ED',        'CCI',     'SEBI'))
 
     key = ('c', 'b', 'b', 'd', 'e')
     j_count = 0
