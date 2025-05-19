@@ -1,7 +1,42 @@
+#nested for loop exercise
+def invalid_input():
+    while True:
+        if n.lower() not in ['a', 'b', 'c', 'd', 'e']:
+            n = input(('Enter a valid input: '))
+            
+def market_knowledge():
+    q = (('What is the fastest stock exchange in the world'), 
+         ('First bank in India listed in NYSE'), 
+         ('NSE established in which year'), 
+         ('NSE HQ is at'), 
+         ('Which agency regulates stock market of India'))
+    o = (('NSE', 'NYSE', 'BSE', 'NIKKEI', 'NASDAQ'),
+         ('SBI', 'ICICI', 'HFDC', 'AXIS', 'KOTAK'),
+         ('1991', '1992', '1993', '1994', '1995'),
+         ('DELHI', 'BANGALORE', 'HYDERABAD', 'MUMBAI', 'CHENNAI'),
+         ('NABARD', 'RBI', 'ED', 'CCI', 'SEBI'))
 
-
-
-
+    key = ('c', 'b', 'b', 'd', 'e')
+    j_count = 0
+    score = 0
+    
+    for i in q:
+        print('---------------------')
+        print(i)
+        for j in o[j_count]:
+            print(j)
+        n = input('Choose an option: ')
+        print('')
+        # invalid_input()    #trying to implement this but getting errors, will catchu up with this later
+        if n.lower() == key[j_count]: 
+            print(f"Correct")
+            score += 1
+        else :
+            print('Wrong')
+            print(f"The correct answer was {key[j_count]}")
+        j_count += 1
+    print(f"you got {score} correct out of {len(key)}")
+market_knowledge()
 #----------------------------------------------------------
 #check if input number 'n' is a palindrome
 def is_plaindrome():
