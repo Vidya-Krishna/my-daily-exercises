@@ -1,4 +1,33 @@
+# number guessing program
+import random
 
+def fourth_attempt_iirc():
+    low, high = 1, 100
+    cg = random.randint(low, high)
+    print(cg)
+    count = 0
+    is_running = True
+
+    while is_running:
+        n = (input(f'guess a num in range {low}, {high}: '))
+        count += 1
+        if n.isdigit():
+            
+            
+            n = int(n)
+            if n > cg and n > low and n <= high:
+                print('cold, try a lower number')
+            elif n < cg and n > low and n <= high:
+                print('hot, try a higher number')
+            elif n < low or n > high:
+                print('please enter rangebound int only')
+            else:
+                print(f'correct, number of gueese: {count}')
+                is_running = False
+        elif not n.isdigit():
+            print('enter integers only')
+
+fourth_attempt_iirc()
 
 
 #----------------------------------------------------------
