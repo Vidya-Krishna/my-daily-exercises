@@ -6,6 +6,7 @@ def mini_proj_num_guess():
   high = 100
   cg = random.randint(low, high)
   gc = 0
+  invalid_gc = 0
   is_running = True
   while is_running:
     n = input(f'Guess an int between {low}, {high}: ')
@@ -20,7 +21,9 @@ def mini_proj_num_guess():
         print('hot, try a high number')
       else:
         print(f'correct, it matched in {gc} times')
+        is_running = False
     else:
+      invalid_gc += 1
       print('please enter an **int**  between {low}, {high} ')
 
 mini_proj_num_guess()
