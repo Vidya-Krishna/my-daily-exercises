@@ -54,7 +54,12 @@ def fourth_attempt_iirc():
             print('enter integers only')
 
 fourth_attempt_iirc()
-
+# here I tested for
+#1. -ve numbres = program worked!
+#2. out of range int = program worked!
+#3. space " " = program worked!
+#4. just enter / return = program worked!
+#5. If you find any edge-cases, share them!!!
 #----------------------------------------------------------
 #using random.randint()
 n = int(input('Enter n times you want to get random number; n> 0: ')
@@ -67,7 +72,7 @@ def multiple_random_numbers():
         random_number()
 
 multiple_random_numbers()
-#it broke the for my tets_case_1, tets_case_2, tets_case_3, .........
+#it broke for my tets_case_1, tets_case_2, tets_case_3, .........
 #added this to my infinte to do list
 #----------------------------------------------------------
 #nested for loop exercise
