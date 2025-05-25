@@ -1,3 +1,50 @@
+
+# printing 3x3 matrix using loops
+m = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+    ]
+
+            #--------------
+#right corner 
+for i in m:
+    print(i[len(i)-1])
+
+            #--------------
+#left corner
+for i in m:
+    print(i[0])
+
+            #--------------
+#diagonal1 
+count = 0
+for i in m:
+    print(i[count])
+    count += 1
+
+            #--------------
+#diagonal2 
+new_count = 1
+for i in m:
+    count = len(i)-new_count
+    print(i[count])
+    new_count += 1
+
+            #--------------
+#sum of each row 
+for i in m:
+    total = 0
+    #iteration 1; i = [1,2,3]
+    for j in i:
+        #iteration 1; j = i[0] = 1 till iteration3 j = i[2] = 3
+        total += j
+    print('~~~~~* ** *** ** *~~~~~')
+    print(total) 
+
+
+
+#-------------------------------------------
 # number guessing program
 import random
 
