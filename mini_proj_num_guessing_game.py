@@ -32,5 +32,5 @@ def mini_proj_num_guess():
 mini_proj_num_guess()
 
 #passed for inputs: space, just return/enter, -ve inputs, out of range ints
-
+#need to add Difficulty levels (e.g., fewer attempts allowed) | Tracking all previous guesses | Scoring system
 
