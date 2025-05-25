@@ -1,3 +1,50 @@
+
+#--------------------------------------------------------------------------------------------------------------
+#Dice game
+
+
+#--------------------------------------------------------------------------------------------------------------
+#rock paper scissors game
+import random
+choices = ('rock', 'paper', 'scissors')
+is_running = True
+
+while is_running:
+    player_choice = None
+    computer_choice = random.choice(choices)
+    player_choice = input('Select & enter from (rock, paper, scissors): ')
+        
+    while player_choice not in choices:
+        player_choice = input('invalid entry, please select from (rock, paper, scissors): ')
+
+    print(f'player chose {player_choice}, computer chose {computer_choice}')
+        
+    if player_choice == computer_choice:
+        print('~~~~~* * *~~~~~')
+        print('tie')
+        print('~~~~~* * *~~~~~')
+    elif player_choice == 'rock' and computer_choice == 'scissor':
+        print('~~~~~* * *~~~~~')
+        print('player wins')
+        print('~~~~~* * *~~~~~')
+    elif player_choice == 'scissors' and computer_choice == 'paper':
+        print('~~~~~* * *~~~~~')
+        print('player wins')
+        print('~~~~~* * *~~~~~')
+    elif player_choice == 'paper' and computer_choice == 'rock':
+        print('~~~~~* * *~~~~~')
+        print('player wins')
+        print('~~~~~* * *~~~~~')
+    else:
+        print('~~~~~* * *~~~~~')
+        print('computer wins')
+        print('~~~~~* * *~~~~~')
+
+    if not input('press Y to play agian or any key to exit: ').upper() == 'Y':
+        is_running = False
+
+
+#--------------------------------------------------------------------------------------------------------------
 #QUIZ 
 ques = (('2. Which type of Programming does Python support?'),
         ('Is Python case sensitive when dealing with identifiers?'),
