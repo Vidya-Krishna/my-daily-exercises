@@ -3,10 +3,18 @@
 
 
 
-
-
-
-
+#-------------------------------------------
+#this took me 40 minutes to solve.
+#The array has only one repetitive element. Find the repetitive element.
+a = [4, 1, 5, 2, 3, 1]
+n = 1
+for i in range(len(a)):
+    x = a[i]
+    for j in a[n:]:
+        if j == k:
+            print(k)
+            break
+    n += 1
 
 #----------------------------------------------------------------------
 #bitonic point 
