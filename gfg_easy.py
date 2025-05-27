@@ -14,7 +14,14 @@ for i in range(len(a)):
         if j == k:
             print(k)
             break
-    n += 1
+    n += 1                    #this approach sucks as time complexity  = O(n) in worst case
+    
+                #------------
+seen = set()
+for num in a:
+    if num in seen:
+        return num  
+    seen.add(num)
 
 #----------------------------------------------------------------------
 #bitonic point 
