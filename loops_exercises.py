@@ -1,4 +1,16 @@
 
+#------------------------------ 
+#harshad number / Niven number
+ def niven_number(n):
+     count = 0
+     for i in n:
+         count += int(i)
+     return ('yes' if int(n) % count == 0 else 'no')
+
+n = input('enter a num to check: ')
+print(f'Is {n} a Niven number: {niven_number(n)}')
+
+#------------------------------ 
 # printing 3x3 matrix using loops
 m = [
     [1, 2, 3],
