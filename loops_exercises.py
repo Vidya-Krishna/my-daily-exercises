@@ -1,4 +1,13 @@
+# sum of numbers divisible by 3 or 5 in given range
+#here range is 1000
+def sum_three_five() -> int:
+    l = []
+    for i in range(3, 501):
+        if i % 3 == 0 or i % 5 == 0:
+            l.append(i)
+    return (sum(l))
 
+print(sum_three_five())
 #------------------------------ 
 #harshad number / Niven number
  def niven_number(n):
