@@ -48,6 +48,10 @@ def star_symmetry(n, star="*"):
 star_symmetry(n)
 #————————————————————————————————————————————————————————
 #RECTANGLE STAR PATTERN
+#****
+#****
+#****
+#****
 r = int(input("Enter number of rows : "))
 
 def star_rectangle(r, star = "*"):
