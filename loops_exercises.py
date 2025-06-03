@@ -183,6 +183,18 @@ def market_knowledge():
     print(f"you got {score} correct out of {len(key)}")
 market_knowledge()
 #----------------------------------------------------------
+#GCD 
+n = 24
+m = 18
+if n > m: x = m
+else: x = n
+l = []
+for i in range (2, x+1):
+    if (n%i == 0) and (m%i == 0):
+        l.append(i)
+
+print(l[len(l)-1])
+#----------------------------------------------------------
 #check if input number 'n' is a palindrome
 def is_plaindrome():
   n = int(input('Enter: '))
