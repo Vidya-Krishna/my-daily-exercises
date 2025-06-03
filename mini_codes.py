@@ -31,7 +31,7 @@ def main():
     while is_running:
         print("""
              ~~~** *** **~~~
-            Banking Program: 
+            Banking Options: 
             1. Show Balance
             2. Deposit
             3. Withdraw
