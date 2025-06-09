@@ -1,4 +1,7 @@
 # CLI string operations code.
+#count_vowels(word), reverse_string(s), is_palindrome(text), string_sort(words)
+            
+                    # count_vowels(word)
 def count_vowels(user_input_word):
     # word_list = []
     # for i in user_input_word: word_list.append(i)
@@ -23,10 +26,14 @@ print("~~~~~*** ** * ** ***~~~~~")
 print(user_input_word)#
 # print(f"{user_input_word} has {count_vowels(user_input_word)}")
 count_vowels(user_input_word)
-
-
-
-
+                                #--------------------------------
+input = input("Enter a string to check vowel occurences: ").lower()
+print(input.count("a"))
+print(input.count("e"))
+print(input.count("i"))
+print(input.count("o"))
+print(input.count("u"))
+                                #--------------------------------
 
 
 
