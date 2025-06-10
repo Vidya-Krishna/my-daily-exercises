@@ -60,10 +60,7 @@ def reverse_string(s) -> str:
                     # III ---------------------------------
 def is_palindrome(text) -> bool:
     reverse_text = text.lower()[::-1]
-    if len(text) % 2 == 0: print(True)
-    elif reverse_text == text.lower():print(True)
-    else: print(False)
-
+    return (reverse_text == text.lower())
                     # IV ---------------------------------
 def string_sort(words: list) -> list:
     sorted_words = sorted(words)
