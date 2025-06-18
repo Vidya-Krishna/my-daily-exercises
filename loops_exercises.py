@@ -1,3 +1,21 @@
+
+"""
+Nested data processing
+pythonstudents = [
+    {"name": "Alice", "grades": [85, 90, 88]},
+    {"name": "Bob", "grades": [92, 87, 95]},
+    {"name": "Charlie", "grades": [78, 82, 85]}
+]
+# Create dict with name as key, average grade as value
+Multiple conditions
+python# Create dict of numbers 1-20 where key is the number and value is:
+# "fizzbuzz" if divisible by both 3 and 5
+# "fizz" if divisible by 3
+# "buzz" if divisible by 5  
+# the number itself otherwise
+"""
+
+#------------------------------ 
 # sum of numbers divisible by 3 or 5 in given range
 #here range is 1000
 def sum_three_five() -> int:
